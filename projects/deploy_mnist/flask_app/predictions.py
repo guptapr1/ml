@@ -7,7 +7,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # Load the previously trained model from the file
-model = joblib.load("../trained_models/mnist_model.pkl")
+model = joblib.load("../train_mnist_model.py")
 
 # /predict is the end point
 @app.route('/predict', methods=["POST"])
